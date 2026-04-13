@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: harbor.lab.internal/lab/my-app:latest # {"$imagepolicy": "flux-system:my-app"}
+          image: harbor.lab.internal/lab/my-app:initial # {"$imagepolicy": "flux-system:my-app"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
