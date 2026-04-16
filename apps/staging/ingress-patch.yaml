@@ -4,7 +4,7 @@ metadata:
   name: my-app
 spec:
   rules:
-    - host: staging.lab.internal
+    - host: app-staging.lab.internal
       http:
         paths:
           - path: /
