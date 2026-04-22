@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: harbor.apj-cxrules.win/lab/my-app:v1.0.1 # {"$imagepolicy": "flux-system:my-app"}
+          image: docker.io/ariesbabu/my-app:v1.0.1 # {"$imagepolicy": "flux-system:my-app"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
