@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: docker.io/ariesbabu/app-source:3338bbe # {"$imagepolicy": "flux-system:my-app"}
+          image: docker.io/ariesbabu/app-source:027ad8c # {"$imagepolicy": "flux-system:my-app"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
