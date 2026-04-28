@@ -12,7 +12,7 @@ spec:
       http:
         paths:
           - path: /
-            pathType: ImplementationSpecific
+            pathType: Prefix  # Change this from ImplementationSpecific
             backend:
               service:
                 name: capacitor
