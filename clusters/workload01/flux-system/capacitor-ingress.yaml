@@ -4,7 +4,7 @@ metadata:
   name: capacitor
   namespace: flux-system
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: web        # or websecure if TLS
+    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure        # or websecure if TLS
 spec:
   ingressClassName: kommander-traefik
   rules:
