@@ -8,6 +8,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.entrypoints: web, websecure
     # If you aren't providing a specific cert, Traefik will use its default/self-signed
     traefik.ingress.kubernetes.io/router.tls: "true" 
+    traefik.ingress.kubernetes.io/service.serversscheme: http
 spec:
   ingressClassName: kommander-traefik
   rules:
