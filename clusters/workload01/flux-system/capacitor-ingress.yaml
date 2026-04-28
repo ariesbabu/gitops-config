@@ -4,7 +4,10 @@ metadata:
   name: capacitor
   namespace: flux-system
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure        # or websecure if TLS
+    # Adding websecure is the key here
+    traefik.ingress.kubernetes.io/router.entrypoints: web, websecure
+    # If you aren't providing a specific cert, Traefik will use its default/self-signed
+    traefik.ingress.kubernetes.io/router.tls: "true" 
 spec:
   ingressClassName: kommander-traefik
   rules:
@@ -12,20 +15,9 @@ spec:
       http:
         paths:
           - path: /
-            pathType: Prefix  # Change this from ImplementationSpecific
+            pathType: Prefix
             backend:
               service:
                 name: capacitor
                 port:
                   number: 9000
-# spec:
-#   rules:
-#   - http:
-#       paths:
-#       - path: /capacitor
-#         pathType: Prefix
-#         backend:
-#           service:
-#             name: capacitor
-#             port:
-#               name: http
