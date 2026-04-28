@@ -17,7 +17,7 @@ spec:
               service:
                 name: capacitor
                 port:
-                  number: http
+                  number: 9000
 # spec:
 #   rules:
 #   - http:
