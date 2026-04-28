@@ -4,3 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - capacitor.yaml          # ← ADDED
+- capacitor-ingress.yaml  # ← ADDED for Capacitor
